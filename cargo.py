@@ -191,3 +191,7 @@ def interactive_sts_detection(df, display_ids=True):
     sl_diam.on_changed(update)
     plt.show()
 
+
+if __name__ == '__main__':
+    df = parse_csv_galveston('Galveston_xxxx.csv')
+    interactive_sts_detection(df, display_ids=True)
